@@ -11,7 +11,7 @@ public class Motorphbasicstructure {
         Scanner scan = new Scanner(System.in);
 
         //login page
-        System.out.println("Welcome to MotorPH Employee Portal");
+        System.out.println("-----------------\n| MotorPH Login |\n-----------------");
         System.out.print("Username: ");
         String usr_id = scan.nextLine();
         System.out.print("Password: ");
@@ -21,8 +21,8 @@ public class Motorphbasicstructure {
         System.out.println("\n\n.\n..\n...\n\nHello, " + usr_id + " !");
         
         //landing page
-        System.out.println("\nWelcome to MotorPH Employee Portal.");
-        System.out.print("Please enter an Employee ID: ");
+        System.out.println("\nWelcome to MotorPH Employee Portal");
+        System.out.print("Enter Employee ID: ");
         String emp_id = scan.nextLine();
 
         //draft employee page
@@ -34,10 +34,9 @@ public class Motorphbasicstructure {
         String emp_hours = scan.nextLine();
 
         //draft working hours page
-        System.out.println("\n\nShowing salary details for employee " + emp_id + ", with " + emp_hours + " hours worked this week");
+        System.out.println("\n\nShowing details for " + emp_hours + " hours");
         System.out.println("Gross Weekly Salary: P21,428.40");
         System.out.println("Net Weekly Salary: P14,854.54");
-        
     }
 
     //blank the screen function para maganda tignan later on -- there are better ways to do this as well this is just incase we're running it purely sa ide console
