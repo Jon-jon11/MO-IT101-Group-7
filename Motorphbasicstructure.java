@@ -18,7 +18,7 @@ public class Motorphbasicstructure {
         String usr_pw = scan.nextLine();
 
         //welcome Message to our user
-        System.out.println("\n\n.\n..\n...\n\nHello, " + usr_id + " !");
+        System.out.println("\n\n.\n..\n...\n\nHello, " + usr_id + "!");
         
         //landing page
         System.out.println("\nWelcome to MotorPH Employee Portal");
@@ -30,11 +30,13 @@ public class Motorphbasicstructure {
         System.out.println("Full Name: Garcia, Manuel III");
         System.out.println("Date of Birth: 10/11/1983");
 
-        System.out.print("\n\nEnter Hours Worked for the week: ");
+        System.out.println("\n\n--Salary Computation--");
+        System.out.print("Enter total number of hours worked for the week: ");
         String emp_hours = scan.nextLine();
 
         //draft working hours page
-        System.out.println("\n\nShowing details for " + emp_hours + " hours");
+        System.out.println("\n\n--Salary Computation--");
+        System.out.println("Showing salary details for employee " + emp_id + ", with " + emp_hours + " hours worked this week.");
         System.out.println("Gross Weekly Salary: P21,428.40");
         System.out.println("Net Weekly Salary: P14,854.54");
     }
