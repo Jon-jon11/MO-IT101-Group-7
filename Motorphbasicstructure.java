@@ -1,38 +1,49 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
-package motorphbasicstructure;
+//package motorph_basicstructure; --comment out for now
+
 import java.util.Scanner;
+
 /**
  *
- * @author jonad
+ * @author it101_group-7
  */
+
 public class Motorphbasicstructure {
+    public static void main(String[] args) throws IOException {
+        Scanner scan = new Scanner(System.in);
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-     String x;
+        //login page
+        System.out.println("Welcome to MotorPH Employee Portal");
+        System.out.print("Username: ");
+        String usr_id = scan.nextLine();
+        System.out.print(System.lineSeparator() + "Password: ");
+        String usr_pw = scan.nextLine();
 
-Scanner scan = new Scanner(System.in);
-System.out.println("Welcome to MotorPH Employee Portal");
-System.out.print("Enter Employee ID: ");
-x= scan.nextLine();
+        //welcome Message to our user
+        System.out.println("\n\n.\n..\n...\n\nHello, " + usr_id + " !");
+        
+        //landing page
+        System.out.println("\nWelcome to MotorPH Employee Portal");
+        System.out.print("Enter Employee ID: ");
+        String emp_id = scan.nextLine();
 
-System.out.println("Showing details for "+ x);
-System.out.println("Name: Garcia, Manuel III");
-System.out.println("Birthday: 10/11/1983");
+        //draft employee page
+        System.out.println("\n\nShowing details for employee: " + emp_id);
+        System.out.println("Full Name: Garcia, Manuel III");
+        System.out.println("Date of Birth: 10/11/1983");
 
-System.out.print("Enter Hours Worked for the week: ");
-        String y = scan.nextLine();
+        System.out.print("\n\nEnter Hours Worked for the week: ");
+        String emp_hours = scan.nextLine();
 
-System.out.println("Showing details for "+ y + " hours");
-System.out.println("Gross Weekly Salary: P21,428.40");
-System.out.println("Net Weekly Salary: P14,854.54");
+        //draft working hours page
+        System.out.println("\n\nShowing details for " + emp_hours + " hours");
+        System.out.println("Gross Weekly Salary: P21,428.40");
+        System.out.println("Net Weekly Salary: P14,854.54");
+    }
 
-
-// TODO code application logic here
+    //blank the screen function para maganda tignan later on -- there are better ways to do this as well this is just incase we're running it purely sa ide console
+    public static void clearScreen() {
+        for (int i = 0; i < 300; i++) {
+            System.out.println();
+        }
     }
 }
